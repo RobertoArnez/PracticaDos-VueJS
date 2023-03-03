@@ -9,8 +9,14 @@ Vue.component ('producto',{
                 precio:"620",
                 colores: ["red", "blue", "black", "yellow"]
             },
+            pedido: {
+                id:null,
+                cantidad: 1,
+                color:null
+            },
         }
     },
+
     template: //html
     `<div class="container">
 
@@ -44,6 +50,6 @@ Vue.component ('producto',{
             </div>
         </div>
     </div>
-    `
+    `,
 });
 

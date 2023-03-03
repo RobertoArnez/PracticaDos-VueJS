@@ -1,30 +1,27 @@
-Vue.component ('menu',{
-    data: function () {
-        return {
-            data: {
-                configuracionPagina: {
-                    marca: "MegaDron",
-                    menuColor: "ligthblue",
-                    footerColor: "slategrey",
-                    precioEstilos: "background: orangered; color: white; font-weight: bold",
-                    menus: [
-                        {
-                            etiqueta: "Inicio",
-                            url: "?"
-                        },
-                        {
-                            etiqueta: "Tienda",
-                            url: "?"
-                        }
-                    ]
+Vue.component("menu-drone", {
+  data: function () {
+    return {
+      configuracionPagina: {
+        marca: "MegaDron",
+        menuColor: "ligthblue",
+        footerColor: "slategrey",
+        precioEstilos: "background: orangered; color: white; font-weight: bold",
+        menus: [
+          {
+            etiqueta: "Inicio",
+            url: "?",
+          },
+          {
+            etiqueta: "Tienda",
+            url: "?",
+          },
+        ],
+      },
+    };
+  },
 
-                }
-            },
-        }
-    },
-
-    template: //html
-    `<nav class="navbar navbar-expand-lg " style="background-color: gray;">
+  //html
+  template: `<nav class="navbar navbar-expand-lg " style="background-color: gray;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"> {{configuracionPagina.marca}} </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -44,5 +41,5 @@ Vue.component ('menu',{
             </div>
         </div>
     </nav>
-    `
+    `,
 });
