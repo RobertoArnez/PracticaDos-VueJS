@@ -52,7 +52,7 @@ Vue.component("producto-relacionado", {
                             <div class="producto-relacionado-precio">Precio:{{productosRelacionados[0].precio}} BOB</div>
                         <div>
                 <div>
-                    <div v-for="color in productosRelacionados[0].colores" class="color-box clic" :style="'background: ${color}'"></div>
+                    <div v-for="color in productosRelacionados[0].colores" class="color-box clic" style="background:red"></div>
                 </div>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ Vue.component("producto-relacionado", {
                             <div class="producto-relacionado-precio">Precio:{{productosRelacionados[1].precio}} BOB</div>
                         <div>
                 <div>
-                    <div v-for="color in productosRelacionados[1].colores" class="color-box clic" :style="'background: ${color}'"></div>
+                    <div v-for="color in productosRelacionados[1].colores" class="color-box clic" style="background:red"></div>
                 </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ Vue.component("producto-relacionado", {
                             <div class="producto-relacionado-precio">Precio:{{productosRelacionados[2].precio}} BOB</div>
                         <div>
                 <div>
-                    <div v-for="color in productosRelacionados[2].colores" class="color-box clic" :style="'background: ${color}'"></div>
+                    <div v-for="color in productosRelacionados[2].colores" class="color-box clic" style="background:red"></div>
                 </div>
                         </div>
                     </div>
